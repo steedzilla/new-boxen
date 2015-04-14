@@ -60,3 +60,15 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "docker",      "0.9.0"
+github "dropbox",     "1.4.1"
+github "handbrake",   "1.0.1"
+github "iterm2",      "1.2.4"
+github "java",        "1.8.2"
+github "macvim",      "1.0.0"
+github "osx",         "2.8.0"
+github "quicksilver", "1.3.0"
+github "spectacle",   "1.0.0"
+github "virtualbox",  "1.0.13"
+github "zsh",         "1.0.0"
