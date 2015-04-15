@@ -8,6 +8,7 @@ class people::mpherg {
 
   include macvim
 
+  include ohmyzsh
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog

@@ -44,11 +44,6 @@ GITHUBTARBALL
     go (2.1.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-handbrake
-  specs:
-    handbrake (1.0.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.11.2)
@@ -144,6 +139,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: erivello/puppet-ohmyzsh
+  specs:
+    ohmyzsh (1.0.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.1.1)
@@ -168,7 +168,6 @@ DEPENDENCIES
   gcc (= 2.2.0)
   git (= 2.7.5)
   go (= 2.1.0)
-  handbrake (= 1.0.1)
   homebrew (= 1.11.2)
   hub (= 1.4.0)
   inifile (= 1.1.1)
@@ -178,6 +177,7 @@ DEPENDENCIES
   module_data (= 0.0.3)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
+  ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
   osx (= 2.8.0)
   phantomjs (= 2.3.0)
