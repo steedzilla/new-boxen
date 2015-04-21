@@ -1,14 +1,22 @@
 class people::mpherg {
+  $home     = "/Users/${::boxen_user}"
+  $dotfiles = "${home}/.dotfiles"
+
+  repository { $dotfiles:
+    source  => 'mpherg/dotfiles'
+  }
+
   include docker
   include dropbox
+  include gpg
 
   include iterm2::stable
   include iterm2::colors::solarized_light
   include iterm2::colors::solarized_dark
 
   include macvim
-
   include ohmyzsh
+
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_print_dialog
   include osx::global::expand_save_dialog
@@ -27,6 +35,7 @@ class people::mpherg {
 
   include quicksilver
   include spectacle
+  include tmux
   include virtualbox
   include zsh
 }
