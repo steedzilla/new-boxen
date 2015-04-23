@@ -37,4 +37,11 @@ class people::mpherg {
   include tmux
   include virtualbox
   include zsh
+
+  # Atlassian SDK development
+  homebrew::tap { "atlassian/tap": }
+  package { "atlassian/tap/atlassian-plugin-sdk":
+    ensure => present,
+    require => Homebrew::Tap["atlassian/tap"]
+  }
 }
