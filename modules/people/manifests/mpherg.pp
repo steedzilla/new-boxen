@@ -23,7 +23,6 @@ class people::mpherg {
   include osx::global::disable_remote_control_ir_receiver
   include osx::global::tap_to_click
   include osx::finder::show_all_on_desktop
-  include osx::finder::show_hidden_files
   include osx::finder::no_file_extension_warnings
   include osx::no_network_dsstores
   class { "osx::global::key_repeat_delay":
