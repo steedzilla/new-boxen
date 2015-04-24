@@ -9,6 +9,11 @@ GITHUBTARBALL
     brewcask (0.0.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-cmake
+  specs:
+    cmake (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.1)
@@ -171,6 +176,7 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.10.2)
   brewcask (= 0.0.6)
+  cmake (= 1.0.1)
   dnsmasq (= 2.0.1)
   docker (= 0.9.0)
   dropbox (= 1.4.1)

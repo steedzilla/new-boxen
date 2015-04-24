@@ -61,6 +61,7 @@ github "xquartz",     "1.2.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+github "cmake",       "1.0.1"
 github "docker",      "0.9.0"
 github "dropbox",     "1.4.1"
 github "iterm2",      "1.2.4"

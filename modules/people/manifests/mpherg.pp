@@ -6,6 +6,7 @@ class people::mpherg {
     source  => 'mpherg/dotfiles'
   }
 
+  include cmake
   include docker
   include dropbox
   include gpg
@@ -46,5 +47,13 @@ class people::mpherg {
   package { "atlassian/tap/atlassian-plugin-sdk":
     ensure => present,
     require => Homebrew::Tap["atlassian/tap"]
+  }
+
+  # Various homebrew packages
+  package { [
+    "dos2unix",
+    "tree"
+    ]:
+    ensure => "present"
   }
 }
