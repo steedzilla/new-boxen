@@ -28,6 +28,9 @@ class people::mpherg {
   class { "osx::global::key_repeat_delay":
     delay => 30
   }
+  class { "osx::global::key_repeat_rate":
+    rate => 20
+  }
   osx::recovery_message {
     "If this Mac is found, please call 801-888-4162":
   }
