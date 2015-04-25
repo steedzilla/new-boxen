@@ -15,6 +15,7 @@ class people::mpherg {
   include iterm2::colors::solarized_light
   include iterm2::colors::solarized_dark
 
+  include java
   include macvim
   include ohmyzsh
 
