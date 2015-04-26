@@ -40,6 +40,7 @@ class people::mpherg {
   include quicksilver
   include spectacle
   include tmux
+  include vagrant
   include virtualbox
   include zsh
 
