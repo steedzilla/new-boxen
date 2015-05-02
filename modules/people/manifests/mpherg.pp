@@ -54,6 +54,7 @@ class people::mpherg {
   # Various homebrew packages
   package { [
     "dos2unix",
+    "maven",
     "tree"
     ]:
     ensure => "present"
