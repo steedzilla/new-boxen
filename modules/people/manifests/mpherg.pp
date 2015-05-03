@@ -7,6 +7,7 @@ class people::mpherg {
   }
 
   include cmake
+  include chrome
   include docker
   include dropbox
   include gpg
