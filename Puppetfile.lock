@@ -71,7 +71,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
-    java (1.8.2)
+    java (1.8.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-macvim
@@ -200,7 +200,7 @@ DEPENDENCIES
   hub (= 1.4.1)
   inifile (= 1.1.1)
   iterm2 (= 1.2.4)
-  java (= 1.8.2)
+  java (= 1.8.3)
   macvim (= 1.0.0)
   module_data (= 0.0.3)
   nginx (= 1.4.5)
