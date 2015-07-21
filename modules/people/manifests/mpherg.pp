@@ -54,6 +54,7 @@ class people::mpherg {
 
   # Various homebrew packages
   package { [
+    "clang-format",
     "dos2unix",
     "maven",
     "tree"
