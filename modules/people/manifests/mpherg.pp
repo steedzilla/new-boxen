@@ -56,6 +56,7 @@ class people::mpherg {
   package { [
     "clang-format",
     "dos2unix",
+    "eigen",
     "maven",
     "tree"
     ]:
