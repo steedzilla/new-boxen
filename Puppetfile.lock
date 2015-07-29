@@ -164,6 +164,11 @@ GITHUBTARBALL
     spectacle (1.0.1)
 
 GITHUBTARBALL
+  remote: omegaice/puppet-mactex
+  specs:
+    mactex (0.1.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.1.1)
@@ -201,6 +206,7 @@ DEPENDENCIES
   inifile (= 1.1.1)
   iterm2 (= 1.2.4)
   java (= 1.8.3)
+  mactex (= 0.1.0)
   macvim (= 1.0.0)
   module_data (= 0.0.3)
   nginx (= 1.4.5)
