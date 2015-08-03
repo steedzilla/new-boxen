@@ -11,6 +11,7 @@ class people::mpherg {
   include docker
   include dropbox
   include gpg
+  include handbrake
 
   include iterm2::stable
   include iterm2::colors::solarized_light

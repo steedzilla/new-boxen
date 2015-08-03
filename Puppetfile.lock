@@ -159,6 +159,11 @@ GITHUBTARBALL
     quicksilver (1.4.2)
 
 GITHUBTARBALL
+  remote: mpherg/puppet-handbrake
+  specs:
+    handbrake (1.0.2)
+
+GITHUBTARBALL
   remote: mpherg/puppet-spectacle
   specs:
     spectacle (1.0.1)
@@ -201,6 +206,7 @@ DEPENDENCIES
   git (= 2.7.9)
   go (= 2.1.0)
   gpg (= 0.0.4)
+  handbrake (= 1.0.2)
   homebrew (= 1.12.0)
   hub (= 1.4.1)
   inifile (= 1.1.1)
