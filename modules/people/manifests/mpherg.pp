@@ -56,6 +56,7 @@ class people::mpherg {
 
   # Various homebrew packages
   package { [
+    "boost",
     "clang-format",
     "dos2unix",
     "eigen",
