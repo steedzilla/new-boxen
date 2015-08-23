@@ -66,7 +66,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-iterm2
   specs:
-    iterm2 (1.2.4)
+    iterm2 (1.2.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
@@ -210,7 +210,7 @@ DEPENDENCIES
   homebrew (= 1.12.0)
   hub (= 1.4.1)
   inifile (= 1.1.1)
-  iterm2 (= 1.2.4)
+  iterm2 (= 1.2.5)
   java (= 1.8.3)
   mactex (= 0.1.0)
   macvim (= 1.0.0)
