@@ -6,6 +6,9 @@ class people::mpherg {
     source  => 'mpherg/dotfiles'
   }
 
+  include atom
+  atom::package { 'vim-mode': }
+
   include cmake
   include chrome
   include docker
