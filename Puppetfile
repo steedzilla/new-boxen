@@ -60,6 +60,7 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+github "arduino",     "1.0.3", :repo => "mpherg/puppet-arduino"
 github "cmake",       "1.0.1"
 github "chrome",      "1.2.0"
 github "docker",      "1.0.0"

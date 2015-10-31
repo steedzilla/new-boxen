@@ -6,6 +6,7 @@ class people::mpherg {
     source  => 'mpherg/dotfiles'
   }
 
+  include arduino
   include cmake
   include chrome
   include docker

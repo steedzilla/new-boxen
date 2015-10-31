@@ -149,6 +149,11 @@ GITHUBTARBALL
     ohmyzsh (1.0.0)
 
 GITHUBTARBALL
+  remote: mpherg/puppet-arduino
+  specs:
+    arduino (1.0.3)
+
+GITHUBTARBALL
   remote: mpherg/puppet-handbrake
   specs:
     handbrake (1.0.4)
@@ -189,6 +194,7 @@ GITHUBTARBALL
     gpg (0.0.4)
 
 DEPENDENCIES
+  arduino (= 1.0.3)
   boxen (= 3.11.0)
   brewcask (= 0.0.6)
   chrome (= 1.2.0)
