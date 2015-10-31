@@ -6,9 +6,6 @@ class people::mpherg {
     source  => 'mpherg/dotfiles'
   }
 
-  include atom
-  atom::package { 'vim-mode': }
-
   include cmake
   include chrome
   include docker
@@ -43,7 +40,6 @@ class people::mpherg {
     "If this Mac is found, please call 801-888-4162":
   }
 
-  include quicksilver
   include spectacle
   include tmux
   include vagrant
@@ -67,5 +63,11 @@ class people::mpherg {
     "tree"
     ]:
     ensure => "present"
+  }
+
+  ruby_gem { 'bundler for all rubies':
+    gem          => 'bundler',
+    version      => '~> 1.0',
+    ruby_version => '*',
   }
 }
