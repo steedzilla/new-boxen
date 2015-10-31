@@ -86,7 +86,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.4.6)
+    nginx (1.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -121,7 +121,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (8.5.2)
+    ruby (8.5.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -221,7 +221,7 @@ DEPENDENCIES
   mactex (= 0.1.0)
   macvim (= 1.0.0)
   module_data (= 0.0.4)
-  nginx (= 1.4.6)
+  nginx (= 1.6.0)
   nodejs (= 5.0.0)
   ohmyzsh (= 1.0.0)
   openssl (= 1.0.0)
@@ -230,8 +230,8 @@ DEPENDENCIES
   pkgconfig (= 1.0.0)
   quicksilver (= 1.4.2)
   repository (= 2.4.1)
-  ruby (= 8.5.2)
   spectacle (= 1.0.1)
+  ruby (= 8.5.3)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
