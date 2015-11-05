@@ -1,4 +1,4 @@
-arduino::version:         '1.6.5'
+arduino::version:         '1.6.6'
 docker::compose::version: '1.5.0'
 docker::engine::version:  '1.8.3'
 docker::machine::version: '0.4.1'
