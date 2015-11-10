@@ -1,7 +1,7 @@
 arduino::version:         '1.6.6'
 docker::compose::version: '1.5.0'
 docker::engine::version:  '1.8.3'
-docker::machine::version: '0.4.1'
+docker::machine::version: '0.5.0'
 docker::swarm::version:   '0.4.0'
 dropbox::version:         '3.10.9'
 handbrake::version:       '0.10.2'
