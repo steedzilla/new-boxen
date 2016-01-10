@@ -66,6 +66,15 @@ class people::mpherg {
     ensure => "present"
   }
 
+  # GNU Radio package (without jack support)
+  package { 'gnuradio':
+    ensure          => 'present',
+    install_options => [
+      '--with-documentation',
+      '--without-jack',
+    ],
+  }
+
   ruby_gem { 'bundler for all rubies':
     gem          => 'bundler',
     version      => '~> 1.0',
