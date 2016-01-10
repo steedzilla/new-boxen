@@ -31,14 +31,14 @@ class people::mpherg {
   include osx::finder::show_all_on_desktop
   include osx::finder::no_file_extension_warnings
   include osx::no_network_dsstores
-  class { "osx::global::key_repeat_delay":
+  class { 'osx::global::key_repeat_delay':
     delay => 25
   }
-  class { "osx::global::key_repeat_rate":
+  class { 'osx::global::key_repeat_rate':
     rate => 2
   }
   osx::recovery_message {
-    "If this Mac is found, please call 801-888-4162":
+    'If this Mac is found, please call 801-888-4162':
   }
 
   include spectacle
@@ -48,22 +48,22 @@ class people::mpherg {
   include zsh
 
   # Atlassian SDK development
-  homebrew::tap { "atlassian/tap": }
-  package { "atlassian/tap/atlassian-plugin-sdk":
-    ensure => present,
-    require => Homebrew::Tap["atlassian/tap"]
+  homebrew::tap { 'atlassian/tap': }
+  package { 'atlassian/tap/atlassian-plugin-sdk':
+    ensure  => present,
+    require => Homebrew::Tap['atlassian/tap']
   }
 
   # Various homebrew packages
   package { [
-    "boost",
-    "clang-format",
-    "dos2unix",
-    "eigen",
-    "maven",
-    "tree"
+    'boost',
+    'clang-format',
+    'dos2unix',
+    'eigen',
+    'maven',
+    'tree'
     ]:
-    ensure => "present"
+    ensure => 'present'
   }
 
   # GNU Radio package (without jack support)
