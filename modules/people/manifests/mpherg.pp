@@ -66,13 +66,31 @@ class people::mpherg {
     ensure => 'present'
   }
 
+  # Make sure our python site-packages refers to boxen
+  file { [
+    "${home}/Library",
+    "${home}/Library/Python",
+    "${home}/Library/Python/2.7",
+    "${home}/Library/Python/2.7/site-packages" ]:
+      ensure => directory,
+      owner  => "${::boxen_user}",
+  }
+
+  file { "${home}/Library/Python/2.7/site-packages/homebrew.pth":
+    content => template('people/homebrew.pth.erb'),
+    owner   => "${::boxen_user}",
+    require => File["${home}/Library/Python/2.7/site-packages"],
+  }
+
   # GNU Radio package (without jack support)
-  package { 'gnuradio':
+  homebrew::tap { 'mpherg/tap': }
+  package { 'mpherg/tap/gnuradio':
     ensure          => 'present',
     install_options => [
       '--with-documentation',
       '--without-jack',
     ],
+    require         => File["${home}/Library/Python/2.7/site-packages/homebrew.pth"],
   }
 
   ruby_gem { 'bundler for all rubies':
