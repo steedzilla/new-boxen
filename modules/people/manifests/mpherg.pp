@@ -22,6 +22,7 @@ class people::mpherg {
   include mactex::full
   include macvim
   include ohmyzsh
+  include xquartz
 
   include osx::global::enable_keyboard_control_access
   include osx::global::expand_print_dialog
