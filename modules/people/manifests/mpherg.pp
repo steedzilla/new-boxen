@@ -9,7 +9,6 @@ class people::mpherg {
   include arduino
   include cmake
   include chrome
-  include docker
   include dropbox
   include gpg
   include handbrake
