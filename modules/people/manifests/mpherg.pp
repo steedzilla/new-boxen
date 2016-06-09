@@ -98,4 +98,9 @@ class people::mpherg {
     version      => '~> 1.0',
     ruby_version => '*',
   }
+
+  ruby_gem { 'cocoapods':
+    gem          => 'cocoapods',
+    ruby_version => '2.0.0',
+  }
 }
