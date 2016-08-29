@@ -6,7 +6,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
-    brewcask (0.0.6)
+    brewcask (0.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -46,7 +46,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.8.1)
+    git (2.9.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -61,7 +61,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.4.1)
+    hub (1.4.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
@@ -196,7 +196,7 @@ GITHUBTARBALL
 DEPENDENCIES
   arduino (= 1.0.3)
   boxen (= 3.11.1)
-  brewcask (= 0.0.6)
+  brewcask (= 0.0.7)
   chrome (= 1.2.0)
   cmake (= 1.0.1)
   dnsmasq (= 2.0.1)
@@ -204,12 +204,12 @@ DEPENDENCIES
   dropbox (= 1.4.1)
   foreman (= 1.2.0)
   gcc (= 3.0.2)
-  git (= 2.8.1)
+  git (= 2.9.0)
   go (= 2.1.0)
   gpg (= 0.0.4)
   handbrake (= 1.0.4)
   homebrew (= 2.0.2)
-  hub (= 1.4.1)
+  hub (= 1.4.3)
   inifile (= 1.4.1)
   iterm2 (= 1.2.6)
   java (= 1.8.4)
