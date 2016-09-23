@@ -18,6 +18,7 @@ class people::mpherg {
   include iterm2::colors::solarized_dark
 
   include java
+  include kubectl
   include mactex::full
   include macvim
   include ohmyzsh
