@@ -19,7 +19,6 @@ class people::mpherg {
   include cmake
   include chrome
   include dropbox
-  include gpg
   include handbrake
 
   include iterm2::stable
@@ -70,6 +69,7 @@ class people::mpherg {
     'clang-format',
     'dos2unix',
     'eigen',
+    'gpg',
     'maven',
     'tree'
     ]:
