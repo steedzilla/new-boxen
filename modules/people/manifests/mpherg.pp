@@ -71,6 +71,7 @@ class people::mpherg {
     'eigen',
     'gpg',
     'maven',
+    'python3',
     'tree'
     ]:
     ensure => 'present'
