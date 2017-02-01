@@ -154,11 +154,6 @@ GITHUBTARBALL
     ohmyzsh (1.0.0)
 
 GITHUBTARBALL
-  remote: jenscobie/puppet-kubectl
-  specs:
-    kubectl (1.0.3)
-
-GITHUBTARBALL
   remote: mpherg/puppet-arduino
   specs:
     arduino (1.0.3)
@@ -218,7 +213,6 @@ DEPENDENCIES
   inifile (= 1.4.1)
   iterm2 (= 1.2.6)
   java (= 1.8.4)
-  kubectl (= 1.0.3)
   mactex (= 0.1.0)
   macvim (= 1.0.0)
   module_data (= 0.0.4)

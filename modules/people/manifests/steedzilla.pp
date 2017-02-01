@@ -1,10 +1,10 @@
-class people::mpherg {
+class people::steedzilla {
   $home     = "/Users/${::boxen_user}"
-  $dotfiles = "${home}/.dotfiles"
+#  $dotfiles = "${home}/.dotfiles"
 
-  repository { $dotfiles:
-    source  => 'mpherg/dotfiles'
-  }
+#  repository { $dotfiles:
+#    source  => 'mpherg/dotfiles'
+#  }
 
   include atom
   atom::package { [
@@ -17,7 +17,7 @@ class people::mpherg {
 
   include arduino
   include cmake
-  include chrome
+#  include chrome
   include dropbox
   include handbrake
 
@@ -26,8 +26,7 @@ class people::mpherg {
   include iterm2::colors::solarized_dark
 
   include java
-  include kubectl
-  include mactex::full
+#  include mactex::full
   include macvim
   include ohmyzsh
   include xquartz
@@ -47,7 +46,7 @@ class people::mpherg {
     rate => 2
   }
   osx::recovery_message {
-    'If this Mac is found, please call 801-888-4162':
+    'If this Mac is found, please call 801-923-8765':
   }
 
   include spectacle
@@ -56,18 +55,10 @@ class people::mpherg {
   include virtualbox
   include zsh
 
-  # Atlassian SDK development
-  homebrew::tap { 'atlassian/tap': }
-  package { 'atlassian/tap/atlassian-plugin-sdk':
-    ensure  => present,
-    require => Homebrew::Tap['atlassian/tap']
-  }
-
   # Various homebrew packages
   package { [
     'boost',
     'clang-format',
-    'conan',
     'dos2unix',
     'eigen',
     'gpg',
@@ -92,27 +83,5 @@ class people::mpherg {
     content => template('people/homebrew.pth.erb'),
     owner   => "${::boxen_user}",
     require => File["${home}/Library/Python/2.7/site-packages"],
-  }
-
-  # GNU Radio package (without jack support)
-  homebrew::tap { 'mpherg/tap': }
-  package { 'mpherg/tap/gnuradio':
-    ensure          => 'present',
-    install_options => [
-      '--with-documentation',
-      '--without-jack',
-    ],
-    require         => File["${home}/Library/Python/2.7/site-packages/homebrew.pth"],
-  }
-
-  ruby_gem { 'bundler for all rubies':
-    gem          => 'bundler',
-    version      => '~> 1.0',
-    ruby_version => '*',
-  }
-
-  ruby_gem { 'cocoapods':
-    gem          => 'cocoapods',
-    ruby_version => '2.0.0',
   }
 }
